@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Codelândia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div class="header_title">
+            <h1 class="title_left">Codelândia</h1>
+            <h1 class="title_right">blog</h1>
+        </div>
+        <div class="header_search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+            <input type="search" name="busca" placeholder="Pesquisar no blog">
+        </div>
+    </header>
+
+    <main class="content_home">
+        <article class="news">
+            <div class="first_line">
+                <time datetime=”2021-22-10” class="date">22 de out, 2021</time>
+                <i class="far fa-heart"></i>
+            </div>
+            <h2 class="title_content">Comece por aqui: HTML</h2>
+            <p class="text">HTML significa Hypertext Markup Language. Ele não é uma linguagem de programação, mas sim de marcação, isto significa que ele vai apenas estruturar o conteúdo das<span id="dots1">...</span> <span id="more1"> suas páginas ou aplicações. Vamos pensar no corpo humano, nele o HTML seria apenas a estrutura esquelética, e para o corpo ser visualmente bonito e realmente funcionar iremos precisar do CSS e do JavaScript.</span></p>
+
+            <button onclick="myFunction('1')" id="myBtn1">Leia Mais</button>
+        </article>
+
+        <article class="news">
+            <div class="first_line">
+                <time datetime=”2021-22-10” class="date">22 de out, 2021</time>
+                <i class="far fa-heart"></i>
+            </div>
+            <h2 class="title_content">Para que serve o CSS</h2>
+            <p class="text">O CSS é chamado de linguagem Cascading Style Sheet e é ele quem vai estilizar e deixar a sua estrutura HTML visualmente mais bonita. Com ele você pode organizar e decorar todo o layout da sua<span id="dots2">...</span> <span id="more2"> página, alterando cores e tamanhos, estabelecendo posições diferentes para os elementos, ajustando imagens, etc. O CSS seria a parte de fora do corpo humano, o que nós enxergamos ao olhar para uma pessoa, como o rosto e as roupas.</span></p>
+
+            <button onclick="myFunction('2')" id="myBtn2">Leia Mais</button>
+        </article>
+
+        <article class="news">
+            <div class="first_line">
+                <time datetime=”2021-22-10” class="date">22 de out, 2021</time>
+                <i class="far fa-heart"></i>
+            </div>
+            <h2 class="title_content">Onde entra o JavaScript</h2>
+            <p class="text">Vamos falar sobre o JavaScript, ou simplesmente JS, agora sim estamos tratando de
+                uma linguagem de programação! O JS é usado  principalmente para o desenvolvimento<span id="dots3">...</span> <span id="more3"> web e desenvolvimento
+                de software, é ele quem vai trazer funcionalidade e interação com o usuário à sua página ou aplicação.
+                Você pode imaginá-lo como a musculutarua ou até mesmo a alma do corpo humano, pois é ele quem traz vida,
+                movimento e ação para a sua criação web. O JavaScript é uma das linguagens mais populares do mundo, pois
+                ele pode atuar não só na programação front-end (parte visual), mas também no back-end (parte interna de
+                uma aplicação).</span></p>
+
+                <button onclick="myFunction('3')" id="myBtn3">Leia Mais</button>
+
+        </article>
+
+        <article class="news">
+            <div class="first_line">
+                <time datetime=”2021-22-10” class="date">22 de out, 2021</time>
+                <i class="far fa-heart"></i>
+            </div>
+            <h2 class="title_content">Bônus: Frameworks</h2>
+            <p class="text">Ah, os frameworks! Eu não havia mencionado até então mas eles também são
+                extremamente importantes. Um framework é um conjunto de códigos que auxilia o programador no
+                desenvolvimento de<span id="dots4">...</span> <span id="more4"> sites e aplicações, basicamente ele traz estruturas de códigos prontas para serem
+                aplicadas em uma determinada funcionalidade do seu projeto. Existem diversos frameworks, como Angular,
+                Vue e Bootstrap, mas antes de aprender mais sobre eles, é bom ter uma boa base de conhecimento nas
+                linguagens citadas acima.</span></p>
+
+                <button onclick="myFunction('4')" id="myBtn4">Leia Mais</button>
+                
+        </article>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados <i class="far fa-copyright"></i> 2021</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        function myFunction(n) {
+            var dots = document.getElementById("dots"+n);
+            var moreText = document.getElementById("more"+n);
+            var btnText = document.getElementById("myBtn"+n);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Leia Mais";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Leia Menos";
+                moreText.style.display = "inline";
+            }
+        }
+
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.news', {
+            delay: 200
+        });
+        ScrollReveal().reveal('.inicio_news', {
+            delay: 400
+        });
+        ScrollReveal().reveal('.titulo_news', {
+            delay: 500
+        });
+        ScrollReveal().reveal('.paragrafo_news', {
+            delay: 600
+        });
+    </script>
+
+</body>
+
+</html>
