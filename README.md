@@ -1,10 +1,10 @@
-# Blog - Codelândia
+# JordanShoes - Codelândia
 
 <h2>📝 Sobre</h2>
-<p>Projeto desenvolvido a partir do desafio 1 proposto pelo Iuri Silva (iuricode) na comunidade Codelândia do Discord.</p>
+<p>Projeto desenvolvido a partir do desafio 2 proposto pelo Iuri Silva (iuricode) na comunidade Codelândia do Discord.</p>
  
 <h2>🎯 Objetivo</h2>
-<p>O objetivo era fazer uma página de blog simples com responsividade e um pouco de animação. No conteúdo coloquei um pouco do meu conhecimento sobre os conceitos de HTML, CSS, JS e Frameworks.</p>
+<p>O objetivo era fazer uma página de e-commerce com responsividade e um pouco de animação. Acrescentei a descrição do produto com o hover.</p>
 
 <h2>💻 Tecnologias</h2>
 <ul>
@@ -13,11 +13,11 @@
     <li>JavaScript</li>
 </ul>
 
-<h2>📸 Imagem do site</h2>
-<img src="./github/pagina-blog.png" alt="Imagem do site">
+<h2>🎬 Gif do site</h2>
+<img src="./github/gif-jordanshoes.gif" alt="Gif do site">
 
 <h2>🔗 Link</h2>
-<p><a href="https://brusatiro.github.io/blog-codelandia/" target="_blank">Clique aqui</a></p>
+<p><a href="">Clique aqui</a></p>
 
 <h2>📧 Entre em contato:</h2>
   <p><a href="mailto:brunasatiro@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a></p>
